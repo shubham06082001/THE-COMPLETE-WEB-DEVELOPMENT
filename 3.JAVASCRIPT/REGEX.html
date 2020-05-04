@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>while loop</title>
+
+</head>
+
+<body>
+    <p id="para">hello!</p>
+    <br>
+
+    <script>
+        var str = "Atlanta";
+        var pattern1 = /a/g;
+//        g stands for globally as it will return not ignoring case
+        
+        var pattern2 = /a/i;
+
+//        i stand for ignoring case as it will ignore case and return the results
+
+        window.alert(str.search(pattern1));
+        window.alert(str.search(pattern2));
+        window.alert(pattern1.test(str));
+        window.alert(pattern2.test(str));
+        
+        
+
+        document.getElementById("para").innerHTML = "<p>" + str.search(pattern1) + "</p>";
+       
+        document.getElementById("para").innerHTML = "<p>" + str.match(pattern1) + "</p>";
+        
+        window.alert(str.match(pattern1));
+
+    </script>
+</body>
+
+</html>

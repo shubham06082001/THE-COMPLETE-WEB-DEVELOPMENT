@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <title>datatypes And variable</title>
+    <meta charset="utf-8">
+    <style>
+        .bluebox {
+
+            height: 100px;
+            width: auto;
+            padding: 16px;
+            background-color: aqua
+        }
+
+        .greenbox {
+            color: lawngreen;
+            height: 100px;
+            width: auto;
+            margin: 10px;
+            background-color: green;
+
+
+        }
+
+        .yellowbox {
+            color: rebeccapurple;
+            height: 100px;
+            width: auto;
+            background-color: yellow;
+
+        }
+
+        .great {
+            background-color: blueviolet
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bluebox" id="facebook">
+        <p>FACEBOOK is <span class="great">great</span>.
+        </p>
+    </div>
+    <div class="yellowbox" id="apple">
+        <p>APPPLE.
+        </p>
+    </div>
+    <div class="greenbox" id="microsoft">
+        <p>MICROSOFT.
+        </p>
+    </div>
+    <button id="button1">CHANGE FACEBOOK STYLE</button>
+    <button id="button2">CHANGE APPLE STYLE</button>
+    <script>
+        var x = 3;
+        window.console.log(x);
+        var y = 5;
+        var z;
+        window.console.log("the value of z is " + z);
+        z = x + y;
+        window.console.log("the type of z is " + typeof(z));
+        z = x + " " + y;
+        window.console.log("the type of z is " + typeof(z));
+        var check = (x == 3);
+        window.console.log("the value of check is " + check + "  " +" and type is "+ typeof(check));
+        var myArray=[1,2,3];
+        window.console.log(myArray);
+        window.console.log("the type of myarray is "+ typeof(myArray));
+    </script>
+
+</body></html>

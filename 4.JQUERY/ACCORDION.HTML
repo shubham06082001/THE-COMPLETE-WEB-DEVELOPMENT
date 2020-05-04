@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        JQUERY UI
+    </title>
+    <meta charset="utf-8">
+    <script src="JS/jquery.js"></script>
+
+
+    <style>
+        .bluebox {
+
+            background-color: #5464f2;
+            height: auto;
+            width: auto;
+            color: white;
+            padding: 20px;
+        }
+
+        .greenbox {
+
+            background-color: #6bf82a;
+            height: 200px;
+            width: auto;
+
+        }
+
+
+        .yellowbox {
+            background-color: #eff707;
+            height: 200px;
+            width: auto;
+            
+
+        }
+        #droppable
+        {
+            background-color: #990e1c;
+            color: white;
+            height: 500px;
+            width: auto;
+            padding: 50px;;
+            
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="resizer" class="ui-widget-content">
+        <div class="bluebox" id="facebook">
+        <h3>Section 1</h3>
+            
+        <div>
+            
+            <p>Content 1</p>
+            <p>Content 1</p>
+            <p>Content 1</p>
+            <p>Content 1</p>
+            <p>Content 1</p>
+            
+        </div>
+            
+        <h3>Section 2</h3>
+        <div><p>Content 2</p></div>
+        <h3>Section 3</h3>
+        <div><p>Content 3</p></div>
+    </div>
+    
+    </div>
+    
+    <div class="greenbox ui-corner-all">
+        <h1>MICROSOFT</h1>
+        <p id="paragraph">new paragraph</p>
+        <a href="https://www.google.com">this is a link.</a>
+        <br \>
+        <br \>
+        <a href="https://www.microsoft.com">this is another link.</a>
+
+    </div>
+    <p> hope you enjoy our page.</p>
+
+    <div class="yellowbox ui-corner-all">
+        <h1>APPLE</h1>
+
+    </div>
+    <span class="words">have a great day ahead</span>
+    <div class="ui-state-error" style="height: :100px;margin-top: :20px">
+        <div id="droppable">
+        <h1>DROP HERE ..!</h1>
+        </div>
+
+        <p> ERROR MESSEGE </p>
+        <br />
+        <br />
+    </div>
+    <script>
+        var message = ["hi!", "hello help me ", "come on!"];
+        $(function() {
+            $("#facebook").accordion({
+                collapsible: true,
+                icons:
+                {
+                    header:"ui-icon-circle-arrow-e",
+                    activeHeader:"ui-icon-circle-arrow-s",
+                },
+                heightStyle: "fill",
+            });
+            $("#resizer").resizable({
+                resize:function(){
+                    $("#facebook").accordion("refresh");
+                }
+            });
+            
+
+           
+
+
+        });
+    </script>
+
+</body></html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        respond to events
+    </title>
+    <meta charset="utf-8">
+    <script src="JS/jquery.js"></script>
+
+
+    <style>
+        .bluebox {
+
+            background-color: #589bf3;
+            height: auto;
+            width: auto;
+        }
+
+        .greenbox {
+
+            background-color: #ac04d1;
+            height: auto;
+            width: auto;
+
+        }
+
+
+        .yellowbox {
+            background-color: rebeccapurple;
+            height: auto;
+            width: auto;
+
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="bluebox">
+
+        <h1>
+            FACEBOOK is <span id="great">great</span>
+        </h1>
+        <table>
+            <tr>
+                <th>MAKE</th>
+                <th>MODEL</th>
+                <th>WARRANTY</th>
+            </tr>
+
+            <tr>
+                <td>Apple</td>
+                <td>Iphone 11 pro</td>
+                <td>12months</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Iphone 11</td>
+                <td>12months</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Iphone X</td>
+                <td>12months</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Iphone Xs MAX</td>
+                <td>12months</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="greenbox">
+        <h1>MICROSOFT</h1>
+        <p id="paragraph">new paragraph</p>
+        <a href="https://www.google.com">this is a link.</a>
+        <br \>
+        <br \>
+        <a href="https://www.microsoft.com">this is another link.</a>
+        <ul>
+            <li>BMW</li>
+            <li>Lamborghini</li>
+            <li>AUDI</li>
+            <li>JAGUAR</li>
+            <li>FERRARI</li>
+            <li>PORSCHE</li>
+        </ul>
+    </div>
+    <p> hope you enjoy our page.</p>
+
+    <div class="yellowbox">
+        <h1>APPLE</h1>
+        <ul>
+            <li>BMW</li>
+            <li>Lamborghini</li>
+            <li>AUDI</li>
+            <li>JAGUAR</li>
+            <li>FERRARI</li>
+            <li>PORSCHE</li>
+        </ul>
+        <p>ENTER your NAME here : <input type="text"><button type="submit">SUBMIT </button></p>
+    </div>
+    <span class="words">have a great day ahead</span>
+    <script>
+        $(function() {
+            $("p").click(function() {
+//                $("p").css("background-color", "rgba( 23, 154, 190, 0.791 )");
+            $(this).click(function() {
+                $("p").css("background-color", "rgba( 231, 82, 238, 1)");
+
+            });
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>

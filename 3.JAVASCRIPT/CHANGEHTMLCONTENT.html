@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        CHANGE HTML CONTENT
+    </title>
+    <meta charset="utf-8">
+    <style>
+       .bluebox
+        {
+            
+            height: 200px;
+            width: auto;
+            padding: 16px;
+            background-color: aqua
+        }
+        .silverbox
+        {
+            
+            height: 200px;
+            width: auto;
+            padding: 16px;
+            background-color: silver;
+        }
+        .greenbox
+        {
+            color: lawngreen;
+            height: 200px;
+            width: auto;
+            margin: 10px;
+            background-color: green;
+            
+            
+        }
+        .yellowbox
+        {          
+            color: rebeccapurple;
+            height: 200px;
+            width: auto;
+            background-color: yellow;
+                    
+        }
+        .great
+        {
+            background-color: blueviolet
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="bluebox" id="facebook">
+
+        FACEBOOK
+    </h1>
+    <div class="redbox">
+        <h1>GOOGLE</h1>
+    </div>
+    <div class="silverbox" id="apple">
+        <h1>APPLE</h1>
+    </div>
+    <div class="yellowbox">
+        <h1>MICROSOFT</h1>
+    </div>
+    <span class="words">have a great day ahead</span>
+    <button id="button1">change facebook content</button>
+    <br>
+    <button id="button2">change apple content</button>
+    <script>
+        document.getElementById("button1").onclick = function() {
+            document.getElementById("facebook").innerHTML = "<p>facebook.</p>"
+        }
+        document.getElementById("button2").ondblclick = function() {
+            document.getElementById("apple").innerHTML = "<ul><li>mercedes</li><li>audi</li><li>bmw</li><li>ferrari</li></ul>"
+        }
+    </script>
+
+</body></html>

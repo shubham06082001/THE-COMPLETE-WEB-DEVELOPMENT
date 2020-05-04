@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>while loop</title>
+
+</head>
+
+<body>
+    <p>STRING :<span id="string"></span></p>
+    <p>PATTERN :<span id="pattern"></span></p>
+    <p>RESULT(SEARCH) :<span id="search"></span></p>
+    <p>RESULT(MATCH) :<span id="match"></span></p>
+    <p>RESULT(TEST) :<span id="test"></span></p>
+    <p></p>
+    <p></p>
+
+    <script>
+        var str = "At lanta1@#%&*&";
+        
+        var pattern =/[a-z]/g;
+        //        here [a-z] stants for all the alphabets in small letters only to check which is included in string or not
+        
+        var pattern =/[^a-z]/g;
+        //        here [a-z] stants for all the  non - alphabets in small letters only to check which is included in string or not
+        
+        var pattern = /\d/g;
+        //        here d stants for digits to check which is included in string or not
+        
+//        var pattern = /\w/g;
+        //        here w stants for alphanumeric characters  to check which is included in string or not
+        
+//        var pattern = /\W/g;
+        //        here d stants for non alphanumeric charcters to check which is included in string or not
+        //        var pattern =new RegExp("[a-z]","g")
+//        var pattern =/\s/g;
+        //        here s stants for all the spaces in between  to check which is included in string or not
+        document.getElementById("string").innerHTML = str;
+        document.getElementById("pattern").innerHTML = pattern;
+        document.getElementById("search").innerHTML = str.search(pattern);
+        document.getElementById("match").innerHTML = str.match(pattern);
+        document.getElementById("test").innerHTML = pattern.test(str);
+    </script>
+</body></html>

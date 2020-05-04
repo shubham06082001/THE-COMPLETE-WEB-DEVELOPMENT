@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>if else ladder</title>
+
+</head>
+
+<body>
+    <p>enter your speed on the motorway : <input id="speed" type="number" />
+        <button onclick="checkspeed()">
+            check
+        </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>nature type :  <input id="nature" />
+        <button onclick="checkSeason()">
+            Check Season
+        </button>
+        
+        
+    </p>
+    <script>
+        function checkspeed() {
+            var speed = document.getElementById("speed").value.toLowerCase;
+            if (speed > 70) {
+                window.alert("you are going too fast!");
+
+            } else if (speed > 40) {
+                window.alert("you are going fine");
+
+            } else {
+                window.alert("you are going too slow!");
+            }
+        }
+        function checkSeason()
+        {
+            var x = document.getElementById("nature").value;
+            switch(x)
+                {
+                    case "summer":
+                        window.alert("its summer time!");
+                        break;
+                        
+                    case "winter":
+                        window.alert("its winter time!");
+                        break;
+                        
+                    case "autumn":
+                        window.alert("its autumn time!");
+                        break;
+                        
+                    case "rainy":
+                        window.alert("its rainy time!");
+                        break;
+                        
+                    case "spring":
+                        window.alert("its apring time!");
+                        break;
+                    default:
+                        window.alert("i do not recognise this!");
+                        break;
+                        
+                }
+        }
+
+    </script>
+</body>
+
+</html>

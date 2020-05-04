@@ -1,0 +1,45 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <title>POPOVER PLUGIN</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary" data-toggle="popover" data-content="<h4>Popover</h4><p>This is a popover just like the one you see on an ipad</p>" data-trigger="hover">
+            Button
+        </button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover({
+                html: true;
+                delay: {
+                    "show": 1000,
+                    "hide": 300
+                };
+            });
+            $('[data-toogle="popover"]').on('hidden.bs.popover', function() {
+                window.alert("Popover hidden!");
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

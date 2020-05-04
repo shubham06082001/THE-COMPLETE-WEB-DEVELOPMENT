@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>arrays</title>
+
+</head>
+
+<body>
+    <p id="myParagraph">Javascript.</p>
+    <script>
+        var shoppingList = ["bread", "eggs", "milk", "yogurt", "orange", "soap"];
+        document.getElementById("myParagraph").innerHTML = "<br />" + shoppingList;
+        var list = new Array("chocolate", "cake");
+        document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList[2];
+        //delete shoppingList[2];
+        //document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList[2];
+        document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList;
+        //window.alert(shoppingList[2]);
+        shoppingList.splice(2, 2);
+        document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList;
+
+        shoppingList.splice(1, 1, "newspaper", "handwash", "ice-cream");
+
+        shoppingList.sort();
+
+        document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList;
+
+        shoppingList.reverse();
+
+        document.getElementById("myParagraph").innerHTML += "<br/>" + shoppingList;
+        var myString = 'what is weather like today ?';
+        myString.split();
+        document.getElementById("myParagraph").innerHTML += "<br/>" + "<br/>" + "<br/>" + "<br/>" + "<br/>" + myString;
+
+        var myArray = myString.split(" ",2);
+        document.getElementById("myParagraph").innerHTML += "<br/>" + "<br/>" + "<br/>" + "<br/>" + "<br/>" + myArray;
+    </script>
+</body></html>
